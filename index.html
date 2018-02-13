@@ -36,89 +36,117 @@
 
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <section class="section-header d-flex justify-content-between align-items-baseline">
-                    <ul class="nav-rght row d-flex justify-content-between align-items-baseline row-bg">
-                        <li class="col-md-8 p-md-0">
-                            <form action="#" method="get" class="header-form">
-                                <div class="input-group">
-                                    <input type="text" name="q" class="form-control" placeholder="Search...">
-                                    <span class="input-group-btn">
+                <section class="section-header">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="right-menu d-flex justify-content-start">
+                                <div class="form-search d-flex align-items-baseline flex-md-wrap">
+                                    <form action="#" method="get" class="header-form">
+                                        <div class="input-group">
+                                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">
                                     <button type="submit" name="search" id="search-btn" class="btn btn-flat">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </span>
+                                        </div>
+                                    </form>
+                                    <div class="dropdown">
+                                        <a href="#" role="button" data-toggle="dropdown" aria-expanded="false"
+                                           class="bnt btn-client">Клиенты<i class="fa fa-angle-up"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+
                                 </div>
-                            </form>
-                        </li>
-                        <li class="col-md-4 p-md-0 dropdown">
-                            <a href="#" role="button" data-toggle="dropdown">Клиенты<i class="fa fa-angle-up"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="d-flex justify-content-between">
-                        <li>
-                            <a href="#" class="p-1"><i class="fa fa-bell-o"></i></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" role="button" data-toggle="dropdown">Vincent Gabriel <i
-                                    class="fa fa-angle-up"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Profile</a>
+                                <div><a href="#" class="btn btn-search">Поиск</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="left-menu d-flex justify-content-md-end">
+                                <li class="left-menu__item">
+                                    <a href="#" class="p-1"><i class="fa fa-bell-o"></i>
+                                        <span class="label label-danger">9</span></a>
                                 </li>
-                                <li>
-                                    <a href="#">Logout</a>
+                                <li class="left-menu__item dropdown">
+                                    <a href="#" role="button" data-toggle="dropdown">Vincent Gabriel <i
+                                            class="fa fa-angle-up"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </section>
-                <section class="row sub-header mb-1">
-                    <div class="col-md-2"><h2>Касса</h2></div>
-                    <div class="col-md-offset-2 col-md-10">
-                        <ul class="nav d-flex justify-content-end align-items-baseline">
-                            <li class="data btn">data<span>11.12.1984</span></li>
-                            <li class="control"><a href="#">предидущая</a><a href="#">следующая</a></li>
-                            <li class="dropdown">
-                                <a href="#" role="button" data-toggle="dropdown">Действие<i class="fa fa-angle-up"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                           
-                            <li><a href="#" class="btn btn-create">Создать к\о</a></li>
-                            <li><a href="#" class="btn btn-lock">закрыть кассу</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="content pb-md-5 m-0">
-                    <div class="row content-tikets text-md-center pb-2">
-                        <div class="col-md-3 inner-content-tikets">
-                            <div class="title">приход</div>
-                            <div class="value">10000</div>
-                        </div>
-                        <div class="col-md-3 inner-content-tikets">
-                            <div class="title">Расход</div>
-                            <div class="value">10000</div>
-                        </div>
-                        <div class="col-md-3 inner-content-tikets">
-                            <div class="title">Баланс</div>
-                            <div class="value">10000</div>
-                        </div>
-                        <div class="col-md-3 inner-content-tikets">
-                            <div class="title">Прибыль</div>
-                            <div class="value">10000</div>
                         </div>
                     </div>
-                    <div class="row content-table pb-2">
-                        <div class="col-md-12">
+                </section>
+                <section class="sub-header mb-md-2 mb-sm-1">
+                    <div class="row">
+                        <div class="col-md-2"><h2>Касса</h2></div>
+                        <div class="col-md-offset-2 col-md-10">
+                            <ul class="nav d-flex justify-content-end align-items-baseline">
+                                <li class="data">Дата :<span>11.12.1984</span></li>
+                                <li class="control"><a href="#" class="prev">предыдущая</a><a class="next" href="#">следующая</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" role="button" data-toggle="dropdown" class="btn btn-act">Действие<i
+                                            class="fa fa-angle-up"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#" class="btn btn-create">Создать к\о</a></li>
+                                <li><a href="#" class="btn btn-lock">закрыть кассу</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div class="content pb-md-5 mt-3 mb-3">
+                    <div class="row content-tikets text-md-center text-sm-center pb-2 m-0">
+                        <div class="col-md-3 item-tikets">
+                            <div class="inner-content-tikets">
+                                <div class="title"><span>приход</span></div>
+                                <div class="value text-main-clr"><span>10000</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 item-tikets">
+                            <div class="inner-content-tikets">
+                                <div class="title">Расход</div>
+                                <div class="value text-danger">
+                                    <span>10000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 item-tikets">
+                            <div class="inner-content-tikets">
+                                <div class="title">Баланс</div>
+                                <div class="value">
+                                    <span>10000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 item-tikets">
+                            <div class="inner-content-tikets">
+                                <div class="title">Прибыль</div>
+                                <div class="value text-main-clr">
+                                    <span>18000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row content-table pb-2 mt-3">
+                        <div class="col-md-12 col-sm-12">
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <thead>
@@ -210,11 +238,14 @@
                                 </table>
                             </div>
                         </div>
+
                     </div>
-                </section>
+                </div>
             </div>
+
         </div>
     </div>
+</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
