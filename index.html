@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Adminka</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="container-fluid">
+        <div class="row mb-0">
+            <div class="col-sm-3 col-md-2 sidebar m-0 p-0">
+                <div><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="fa fa-align-justify" aria-hidden="true"></span>
+                </a>
+                    <ul class="nav nav-sidebar">
+                        <li><a href="#"><span class="fa fa-home"></span>главная</a></li>
+                        <li><a href="#"><span class="fa fa-user-o" aria-hidden="true"></span>клиенты</a></li>
+                        <li><a href="#"><span class="fa fa-address-book-o" aria-hidden="true"></span>сотрудники</a></li>
+                        <li><a href="#"><span class="fa fa-dollar"></span>касса</a></li>
+                        <li><a href="#"><span class="fa fa-gear"></span>настройки</a></li>
+                        <li><a href="#"><span class="fa fa-archive"></span>склад</a></li>
+                        <li><a href="#"><span class=" fa fa-plus"></span>добавить</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <section class="section-header d-flex justify-content-between align-items-baseline">
+                    <ul class="nav-rght row d-flex justify-content-between align-items-baseline row-bg">
+                        <li class="col-md-8 p-md-0">
+                            <form action="#" method="get" class="header-form">
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="col-md-4 p-md-0 dropdown">
+                            <a href="#" role="button" data-toggle="dropdown">Клиенты<i class="fa fa-angle-up"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-between">
+                        <li>
+                            <a href="#" class="p-1"><i class="fa fa-bell-o"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" data-toggle="dropdown">Vincent Gabriel <i
+                                    class="fa fa-angle-up"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="row sub-header mb-1">
+                    <div class="col-md-2"><h2>Касса</h2></div>
+                    <div class="col-md-offset-2 col-md-10">
+                        <ul class="nav d-flex justify-content-end align-items-baseline">
+                            <li class="data btn">data<span>11.12.1984</span></li>
+                            <li class="control"><a href="#">предидущая</a><a href="#">следующая</a></li>
+                            <li class="dropdown">
+                                <a href="#" role="button" data-toggle="dropdown">Действие<i class="fa fa-angle-up"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                           
+                            <li><a href="#" class="btn btn-create">Создать к\о</a></li>
+                            <li><a href="#" class="btn btn-lock">закрыть кассу</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="content pb-md-5 m-0">
+                    <div class="row content-tikets text-md-center pb-2">
+                        <div class="col-md-3 inner-content-tikets">
+                            <div class="title">приход</div>
+                            <div class="value">10000</div>
+                        </div>
+                        <div class="col-md-3 inner-content-tikets">
+                            <div class="title">Расход</div>
+                            <div class="value">10000</div>
+                        </div>
+                        <div class="col-md-3 inner-content-tikets">
+                            <div class="title">Баланс</div>
+                            <div class="value">10000</div>
+                        </div>
+                        <div class="col-md-3 inner-content-tikets">
+                            <div class="title">Прибыль</div>
+                            <div class="value">10000</div>
+                        </div>
+                    </div>
+                    <div class="row content-table pb-2">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Время</th>
+                                        <th>Действие</th>
+                                        <th>id</th>
+                                        <th>Имущество\описание</th>
+                                        <th>Приход</th>
+                                        <th>Расход</th>
+                                        <th>Доход</th>
+                                        <th>Сотрудник</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                        <td>sit</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
