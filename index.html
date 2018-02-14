@@ -17,36 +17,34 @@
     <div class="container-fluid">
         <div class="row mb-0">
             <div class="col-sm-3 col-md-2 sidebar m-0 p-0">
-                <div><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="fa fa-align-justify" aria-hidden="true"></span>
-                </a>
-                    <ul class="nav nav-sidebar">
-                        <li><a href="#"><span class="fa fa-home"></span>главная</a></li>
-                        <li><a href="#"><span class="fa fa-user-o" aria-hidden="true"></span>клиенты</a></li>
-                        <li><a href="#"><span class="fa fa-address-book-o" aria-hidden="true"></span>сотрудники</a></li>
-                        <li><a href="#"><span class="fa fa-dollar"></span>касса</a></li>
-                        <li><a href="#"><span class="fa fa-gear"></span>настройки</a></li>
-                        <li><a href="#"><span class="fa fa-archive"></span>склад</a></li>
-                        <li><a href="#"><span class=" fa fa-plus"></span>добавить</a></li>
+                    <div class="sidebar-menu">
+                        <button class="toggle-hamburger toggle-hamburger__hidden">
+                            <span>menu toggle</span>
+                        </button>
+                    <ul class="nav nav-sidebar navbar-collapse" id="toogle-menu">
+                        <li class="nav-sidebar_item"><a href="#"><span class="fa fa-home"></span>главная</a></li>
+                        <li class="nav-sidebar_item"><a href="#"><span class="fa fa-user-o" aria-hidden="true"></span>клиенты</a></li>
+                        <li class="nav-sidebar_item"><a href="#"><span class="fa fa-address-book-o" aria-hidden="true"></span>сотрудники</a></li>
+                        <li class="nav-sidebar_item"><a href="#"><span class="fa fa-dollar"></span>касса</a></li>
+                        <li class="nav-sidebar_item"><a href="#"><span class="fa fa-gear"></span>настройки</a></li>
+                        <li class="nav-sidebar_item"><a href="#"><span class="fa fa-archive"></span>склад</a></li>
+                        <li class="nav-sidebar_item"><a href="#"><span class=" fa fa-plus"></span>добавить</a></li>
                     </ul>
                 </div>
-
             </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <section class="section-header">
-                    <div class="row">
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 content">
+                <header class="content-header">
+                    <div class="row d-flex align-items-md-baseline">
                         <div class="col-md-9">
-                            <div class="right-menu d-flex justify-content-start">
+                            <div class="content-header_right d-flex justify-content-start">
                                 <div class="form-search d-flex align-items-baseline flex-md-wrap">
                                     <form action="#" method="get" class="header-form">
                                         <div class="input-group">
-                                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                                            <input type="text" name="q" class="form-control" placeholder="Поиск">
+                                            <button href="#" class="btn btn-search">Поиск</button>
                                             <span class="input-group-btn">
-                                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                                        <i class="fa fa-search"></i>
+                                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                            <i class="fa fa-search"></i>
                                     </button>
                                 </span>
                                         </div>
@@ -60,18 +58,16 @@
                                             <li><a href="#">Something else here</a></li>
                                         </ul>
                                     </div>
-
                                 </div>
-                                <div><a href="#" class="btn btn-search">Поиск</a></div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <ul class="left-menu d-flex justify-content-md-end">
-                                <li class="left-menu__item">
+                            <ul class="content-header_left d-flex justify-content-md-end">
+                                <li class="content-header_left__item">
                                     <a href="#" class="p-1"><i class="fa fa-bell-o"></i>
                                         <span class="label label-danger">9</span></a>
                                 </li>
-                                <li class="left-menu__item dropdown">
+                                <li class="content-header_left__item dropdown">
                                     <a href="#" role="button" data-toggle="dropdown">Vincent Gabriel <i
                                             class="fa fa-angle-up"></i>
                                     </a>
@@ -87,12 +83,12 @@
                             </ul>
                         </div>
                     </div>
-                </section>
-                <section class="sub-header mb-md-2 mb-sm-1">
-                    <div class="row">
+                </header>
+                <div class="content-subheader mb-md-2 mb-sm-1">
+                    <div class="row d-flex align-items-md-baseline">
                         <div class="col-md-2"><h2>Касса</h2></div>
-                        <div class="col-md-offset-2 col-md-10">
-                            <ul class="nav d-flex justify-content-end align-items-baseline">
+                        <div class="col-md-10 d-sm-flex justify-content-sm-end align-items-sm-center">
+                            <ul class="content-subheader_nav d-flex justify-content-md-end justify-content-sm-between align-items-md-baseline align-items-sm-center flex-md-wrap flex-sm-wrap">
                                 <li class="data">Дата :<span>11.12.1984</span></li>
                                 <li class="control"><a href="#" class="prev">предыдущая</a><a class="next" href="#">следующая</a>
                                 </li>
@@ -106,40 +102,40 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="#" class="btn btn-create">Создать к\о</a></li>
-                                <li><a href="#" class="btn btn-lock">закрыть кассу</a></li>
+                                <li class="create"><a href="#" class="btn btn-create">Создать к\о</a></li>
+                                <li class="lock"><a href="#" class="btn btn-lock">закрыть кассу</a></li>
                             </ul>
                         </div>
                     </div>
-                </section>
-                <div class="content pb-md-5 mt-3 mb-3">
-                    <div class="row content-tikets text-md-center text-sm-center pb-2 m-0">
-                        <div class="col-md-3 item-tikets">
-                            <div class="inner-content-tikets">
+                </div>
+                <div class=" wrapper-inner pb-md-5 mt-3 mb-3">
+                    <div class="row content-tickets text-md-center text-sm-center pb-2 m-0">
+                        <div class="col-md-3 content-tikets_item">
+                            <div class="inner-content-tickets">
                                 <div class="title"><span>приход</span></div>
-                                <div class="value text-main-clr"><span>10000</span></div>
+                                <div class="value indicators-good"><span>15000</span></div>
                             </div>
                         </div>
-                        <div class="col-md-3 item-tikets">
-                            <div class="inner-content-tikets">
+                        <div class="col-md-3 content-tickets_item">
+                            <div class="inner-content-tickets">
                                 <div class="title">Расход</div>
-                                <div class="value text-danger">
+                                <div class="value indicators-danger">
                                     <span>10000</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 item-tikets">
-                            <div class="inner-content-tikets">
+                        <div class="col-md-3 content-tickets_item">
+                            <div class="inner-content-tickets">
                                 <div class="title">Баланс</div>
                                 <div class="value">
                                     <span>10000</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 item-tikets">
-                            <div class="inner-content-tikets">
+                        <div class="col-md-3 content-tickets_item">
+                            <div class="inner-content-tickets">
                                 <div class="title">Прибыль</div>
-                                <div class="value text-main-clr">
+                                <div class="value indicators-good">
                                     <span>18000</span>
                                 </div>
                             </div>
