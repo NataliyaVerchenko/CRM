@@ -62,7 +62,7 @@ img {
 }
 
 .sidebar-menu {
-    margin-top: 35px;
+    padding: 45px 45px 0 0;
 }
 
 .sidebar span {
@@ -133,9 +133,11 @@ img {
 .toggle-hamburger span::after {
     bottom: -20px;
 }
-.toggle-hamburger:hover .sidebar{
-
-    left: -137px;
+.menu-hidden{
+    position: absolute;
+    top: 35;
+    bottom: 0;
+    left: -130px;
 }
 .nav-sidebar {
     list-style: none;
